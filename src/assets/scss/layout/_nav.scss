@@ -1,0 +1,21 @@
+.nav-main {
+    padding: $spacer 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 600;
+    color: $text-color !important;
+}
+.navbar-light .navbar-brand {
+    color: $link-color;
+    
+    &:hover {
+        color:$link-hover-color;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+}

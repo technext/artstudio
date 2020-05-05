@@ -1,0 +1,182 @@
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+/// Regular font family
+/// @type List
+$text-font-stack: 'Nunito Sans',
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
+/// font family 
+$heading-font-stack: 'Nunito Sans',
+    'Helvetica Neue Light',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial',
+    sans-serif !default;
+/// @type List
+$code-font-stack: 'Courier New',
+'DejaVu Sans Mono',
+'Bitstream Vera Sans Mono',
+'Monaco',
+monospace !default;
+
+$base-url: '/assets/' !default;
+
+$bootstrap-sass-asset-helper: false !default;
+
+/*
+* Orson http://en.orson.io , autreplanete http://www.autreplanete.com/ 
+*  
+**/
+
+
+// Brand Colors
+$blue: #1f32f0;
+$indigo: #5c0ddc;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #ff004d;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #3cb669;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+$grays: (100: $gray-100, 200: $gray-200, 300: $gray-300, 400: $gray-400, 500: $gray-500, 600: $gray-600, 700: $gray-700, 800: $gray-800, 900: $gray-900);
+$theme-colors: (primary: $blue, secondary: $gray-600, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
+$colors: (blue: $blue, indigo: $indigo, purple: $purple, pink: $pink, red: $red, orange: $orange, yellow: $yellow, green: $green, teal: $teal, cyan: $cyan, white: $white, gray: $gray-600,gray-dark: $gray-800);
+$theme-color-interval: 8%;
+
+
+// Spacing
+$spacer: 1rem;
+$spacers: (0: 0, 1: ($spacer * 0.25), 2: ($spacer * 0.5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3));
+$sizes: (25: 25%, 50: 50%, 75: 75%, 100: 100%);
+
+
+// Options
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-hover-media-query: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+
+
+
+
+// Links
+$link-color: #DFBA69;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+
+
+// Body
+$body-bg: #2B2C31;
+$text-color: #FFFEDF;
+$body-color: $text-color;
+$hover-color: #5A2E2E;
+
+// Grid
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1370px);
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+
+// Components
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+$border-width: 1px;
+$border-radius: 0.25rem;
+$border-radius-lg: 0.3rem;
+$border-radius-sm: 0.2rem;
+$component-active-color: $white;
+$component-active-bg: theme-color('primary');
+$caret-width: 0.3em;
+$transition-base: all 0.2s ease-in-out;
+$transition-fade: opacity 0.15s linear;
+$transition-collapse: height 0.35s ease;
+
+// Forms
+
+//** `<input>` background color
+$input-bg: #1c1e1f !default;
+//** `<input disabled>` background color
+$input-bg-disabled:$gray-600 !default;
+
+//** Text color for `<input>`s
+$input-color:$text-color !default;
+//** `<input>` border color
+$input-border:#1d2021 !default;
+
+
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-sm: 0.875rem;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+$headings-margin-bottom: ($spacer / 2);
+$headings-font-family: inherit;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+$display1-size: 6rem;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem;
+$display1-weight: 300;
+$display2-weight: 300;
+$display3-weight: 300;
+$display4-weight: 300;
+$display-line-height: $headings-line-height;
+$lead-font-size: 1.25rem;
+$lead-font-weight: 300;
+$small-font-size: 80%;
+$text-muted: $gray-600;
+$blockquote-small-color: $gray-600;
+$blockquote-font-size: ($font-size-base * 1.25);
+$hr-border-color: rgba($black, 0.1);
+$hr-border-width: $border-width;
+$mark-padding: 0.2em;
+$dt-font-weight: $font-weight-bold;
+$kbd-box-shadow: inset 0 -0.1rem 0 rgba($black, 0.25);
+$nested-kbd-font-weight: $font-weight-bold;
+$list-inline-padding: 5px;
+$mark-bg: #fcf8e3;
+
+
+
+

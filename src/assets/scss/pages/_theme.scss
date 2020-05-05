@@ -1,0 +1,122 @@
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.I placed all styles here.Best to remove or seperate styles to sections
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+.intro {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+/* Portfolio */
+
+#portfolio-filters {
+    margin-bottom: 30px;
+    
+}
+
+/* portfolio filter */
+
+#filters li {
+    display: inline-block;
+    margin: 0 25px
+}
+#filters li:last-child {
+    margin-right: 0
+}
+#filters li a {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: lowercase;
+    margin: 8px 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    color: $text-color;
+}
+#filters li a:hover,
+#filters li a.active {
+    color: $link-hover-color
+}
+
+/* Portfolio items */
+
+.entry {
+    overflow: hidden
+}
+.entry-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.entry:hover .entry-image {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+.work-entry-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: $hover-color;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+.entry:hover .work-entry-hover {
+    opacity: 1;
+    visibility: visible
+}
+.work-entry-content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px
+}
+.work-entry-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    position: relative;
+    top: 15px;
+    -webkit-transition: all .5s cubic-bezier(0.4, .2, 0, 1) .2s;
+    transition: all .5s cubic-bezier(0.4, .2, 0, 1) .2s
+}
+.work-entry-cat {
+    font-size: 14px;
+    opacity: 0;
+    position: relative;
+    top: 15px;
+    -webkit-transition: all .5s cubic-bezier(0.4, .2, 0, 1) .3s;
+    transition: all .5s cubic-bezier(0.4, .2, 0, 1) .3s;
+    color: #fff;
+}
+.entry:hover .work-entry-title,
+.entry:hover .work-entry-cat {
+    opacity: 1;
+    top: 0
+}
+.project-intro li {
+    font-size: 18px;
+    color: #000000;
+    padding: 12px 0 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    max-width: 200px
+}
+.project-intro li.title {
+    font-weight: 700;
+    padding: 0px 0 22px;
+}
+
+.project-sidebar img {
+    margin-bottom: 60px;
+}

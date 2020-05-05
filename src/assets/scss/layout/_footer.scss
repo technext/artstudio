@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+/* Footer */
+footer {
+    padding-top: 120px;
+        padding-bottom: 100px;
+    color: $text-color;
+    & a {
+        color: $link-hover-color;  
+    }
+}
+.footer-link li a {
+    text-decoration: underline;
+    color: $text-color;
+    &:hover {
+        color: $link-hover-color;
+    }
+}

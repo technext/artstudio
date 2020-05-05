@@ -1,0 +1,70 @@
+/**
+ * Basic typography style for copy text
+ A solution for this problem is percentage. Usually default font-size of the browser is 16px. 
+ Setting font-size: 100% will make 1rem = 16px. But it will make calculations a little difficult. 
+ A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
+ CALCULATION: Element font size in rem x 16px;
+ */
+
+
+
+/**
+Responsive font styles 
+**/
+
+@media (max-width: 1200px) {
+    legend {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    h1,
+    .h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    h2,
+    .h2 {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+    h3,
+    .h3 {
+        font-size: calc(1.3rem + 0.6vw);
+    }
+    h4,
+    .h4 {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    .display-1 {
+        font-size: calc(1.725rem + 5.7vw);
+    }
+    .display-2 {
+        font-size: calc(1.675rem + 5.1vw);
+    }
+    .display-3 {
+        font-size: calc(1.575rem + 3.9vw);
+    }
+    .display-4 {
+        font-size: calc(1.475rem + 2.7vw);
+    }
+    .close {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+/* Use */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-stack;
+    font-weight: 700;
+    color: $text-color;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.display-3 {
+    font-weight: bold;
+}
